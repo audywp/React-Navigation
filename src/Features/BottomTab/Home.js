@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import Header from '../../Shared/Component/Header';
 
 const Home = (props) => {
   const actionMoveToAbout = () => {
@@ -8,7 +9,7 @@ const Home = (props) => {
 
   return (
     <View>
-      <Text>Home</Text>
+      <Header title="Home" />
       <TouchableOpacity onPress={actionMoveToAbout}>
         <Text>Move To About</Text>
       </TouchableOpacity>
